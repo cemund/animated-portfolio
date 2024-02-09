@@ -12,18 +12,20 @@ import Footer from "./components/footer/Footer";
 export default function App() {
   return (
     <div class="portfolio">
-      <Header />
+      <section>Header</section>
+      <section>Hero</section>
+      <section>About</section>
+      <section>Skills</section>
+      <section>Projects</section>
+      <section>Contact</section>
+      <section>Footer</section>
+      {/* <Header />
       <Hero />
-      <Divider />
       <About />
-      <Divider />
       <Skills />
-      <Divider />
       <Projects />
-      <Divider />
       <Contact />
-      <Divider />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
