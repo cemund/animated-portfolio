@@ -18,10 +18,11 @@ export default function App() {
         <Navbar />
         <Hero />
       </section>
-      <section>Hero</section>
-      <section id="About">About</section>
+      <section id="About">
+        <About />
+      </section>
       <section id="Services">Skills</section>
-      <section id="Porfolio">Projects</section>
+      <section id="Portfolio">Projects</section>
       <section id="Contact">Contact</section>
       <section>Footer</section>
       {/* <Header />
