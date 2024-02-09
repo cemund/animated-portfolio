@@ -1,0 +1,45 @@
+.about {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 3em;
+  justify-content: center;
+}
+
+.about-content {
+  width: 100%;
+}
+
+.about-header {
+  text-align: center;
+}
+
+.links {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
+
+svg {
+  opacity: 50%;
+}
+
+.links > a > svg:hover {
+  color: white;
+  opacity: 100%;
+}
+
+@media (min-width: 600px) {
+  .about {
+    grid-template-columns: 1fr 1fr;
+  }
+  .about-header {
+    text-align: right;
+  }
+  .about-content {
+    width: 70%;
+  }
+  .links {
+    justify-content: end;
+  }
+}

@@ -1,0 +1,91 @@
+body {
+  background-color: var(--black);
+  color: var(--white);
+  font-family: "Nokora", sans-serif;
+}
+
+h1 {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 5rem;
+  line-height: 1;
+}
+
+p {
+  margin: 20px 0;
+  font-size: 18px;
+  line-height: 120%;
+  opacity: 90%;
+}
+
+.portfolio {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0 20px;
+}
+
+.btn,
+.btn-outline {
+  padding: 10px 20px;
+  font-weight: bold;
+  letter-spacing: 6%;
+  border-radius: 3px;
+  border: 0;
+  border: 1px solid var(--secondary);
+}
+
+.btn {
+  background-color: var(--secondary);
+  color: var(--white);
+  margin-right: 20px;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--white);
+  border: 1px solid var(--secondary);
+}
+
+.btn:hover,
+.btn-outline:hover {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  opacity: 60%;
+}
+.btn-outline:hover {
+  background-color: var(--secondary);
+}
+
+.bold {
+  font-weight: 900;
+  letter-spacing: 6%;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.inline {
+  display: inline;
+}
+
+.div-medium {
+  height: 30vh;
+}
+
+section {
+  scroll-margin-top: 20vh;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}

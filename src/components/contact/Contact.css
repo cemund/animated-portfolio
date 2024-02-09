@@ -1,0 +1,98 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+input {
+  background-color: transparent;
+  border: 0;
+  color: var(--white);
+  border-bottom: 1px solid white;
+  padding: 10px 5px;
+}
+
+textarea {
+  display: block;
+  background-color: transparent;
+  border: 0;
+  color: var(--white);
+  font-family: "Nokora", sans-serif;
+  border-bottom: 1px solid white;
+  resize: none;
+  padding: 10px 5px;
+}
+
+.send-message > button {
+  margin: 0;
+}
+
+.email-icon,
+.address-icon {
+  width: 20px;
+  margin-right: 10px;
+}
+
+form p {
+  margin: 0;
+}
+
+.contact-me {
+  order: -1;
+}
+.email,
+.address {
+  display: flex;
+  align-items: center;
+}
+
+.email > p,
+.address > p {
+  font-size: 0.8rem;
+}
+
+@media (min-width: 600px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto 1fr auto auto;
+    gap: 20px;
+  }
+  .name {
+    grid-column: span 3;
+  }
+
+  .input-email {
+    grid-column: span 3;
+  }
+
+  .message {
+    grid-column: span 6;
+    grid-row: 2 / -2;
+  }
+  .send-message {
+    grid-column: 7 / 4;
+    margin: 0;
+    display: flex;
+    justify-content: end;
+  }
+  .contact-me {
+    grid-column: 8/-3;
+    grid-row: 1 / 3;
+  }
+
+  .email {
+    grid-column: 8/-1;
+    grid-row: 3 / 4;
+  }
+
+  .address {
+    grid-column: 8/-1;
+    grid-row: 4 / 5;
+  }
+  .email-icon,
+  .address-icon {
+    width: 32px;
+    margin-right: 20px;
+  }
+}

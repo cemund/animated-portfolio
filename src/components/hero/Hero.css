@@ -1,0 +1,36 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3em;
+  margin: 40px 0;
+}
+
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+}
+
+/* img {
+  display: none;
+} */
+
+.highlight {
+  color: var(--primary);
+}
+
+@media only screen and (min-width: 600px) {
+  .hero {
+    grid-template-columns: 1fr 1fr;
+  }
+  img {
+    display: block;
+  }
+  .hero-p {
+    width: 60%;
+  }
+}
