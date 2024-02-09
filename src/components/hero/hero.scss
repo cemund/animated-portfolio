@@ -1,0 +1,20 @@
+$black: #030607;
+$lighter-black: #121e22;
+
+.hero {
+  height: calc(100vh - 100px);
+  background: linear-gradient(180deg, $black, $lighter-black);
+  position: relative;
+
+  .wrapper {
+    max-width: 1366px;
+    margin: auto;
+  }
+
+  .imageContainer {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

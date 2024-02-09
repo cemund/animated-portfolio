@@ -1,4 +1,4 @@
-* {
+/* * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -9,9 +9,9 @@
   --black: #030607;
   --primary: #41add8;
   --secondary: #2e5160;
-}
+} */
 
-html {
+/* html {
   scroll-behavior: smooth;
   overflow-x: hidden;
-}
+} */
