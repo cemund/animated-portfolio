@@ -104,7 +104,7 @@ export default function Skills() {
           </motion.div>
         </div>
 
-        <p>Move the icons by dragging.</p>
+        <p className="instructions">Move the icons by dragging.</p>
 
         <h1>
           <motion.span whileHover={{ color: "#41add8" }}>
