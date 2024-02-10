@@ -10,10 +10,13 @@ import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import "./App.scss";
 import Navbar from "./components/navbar/Navbar";
+import Cursor from "./components/cursor/Cursor";
+import Sidebar from "./components/sidebar/Sidebar";
 
 export default function App() {
   return (
     <div class="portfolio">
+      <Cursor />
       <section id="Homepage">
         <Navbar />
         <Hero />
@@ -21,7 +24,9 @@ export default function App() {
       <section id="About">
         <About />
       </section>
-      <section id="Services">Skills</section>
+      <section id="Services">
+        <Skills />
+      </section>
       <section id="Portfolio">Projects</section>
       <section id="Contact">Contact</section>
       <section>Footer</section>
