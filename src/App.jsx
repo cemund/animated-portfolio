@@ -27,16 +27,13 @@ export default function App() {
       <section id="Services">
         <Skills />
       </section>
-      <section id="Portfolio">Projects</section>
-      <section id="Contact">Contact</section>
-      <section>Footer</section>
-      {/* <Header />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer /> */}
+      <section id="Portfolio">
+        <Projects />
+      </section>
+      <section id="Contact">
+        <Contact />
+      </section>
+      <Sidebar />
     </div>
   );
 }

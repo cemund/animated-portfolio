@@ -1,10 +1,97 @@
-import React from "react";
-import "./Projects.css";
+import { useState } from "react";
+// import "./Projects.css";
+import "./project.scss";
+import Project from "./project/Project";
+import Modal from "./modals/Modal";
+import { motion } from "framer-motion";
+
+const projects = [
+  {
+    title: "Furniverse",
+    subtitle:
+      "The project component represents a single project and has a hover interactivity on it.",
+    src: "./image.png",
+    color: "#000000",
+    tech: ["Flutter", "Firebase"],
+  },
+
+  {
+    title: "TOS Watchdog",
+    src: "./image.png",
+    subtitle:
+      "The project component represents a single project and has a hover interactivity on it.",
+    tech: ["Javascript", "Python", "Flask"],
+    color: "#8C8C8C",
+  },
+
+  {
+    title: "Notention",
+    src: "./image.png",
+    subtitle:
+      "The project component represents a single project and has a hover interactivity on it.",
+    tech: ["Flutter", "Firebase"],
+    color: "#EFE8D3",
+  },
+
+  {
+    title: "Silencio",
+    src: "./image.png",
+    subtitle:
+      "The project component represents a single project and has a hover interactivity on it.",
+    tech: ["Flutter", "Firebase"],
+    color: "#706D63",
+  },
+];
+
+const variants = {
+  initial: {
+    y: -200,
+    opacity: 0,
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+      staggerChildren: 0.2,
+      type: "spring",
+    },
+  },
+};
 
 export default function Projects() {
+  const [modal, setModal] = useState({ active: false, index: 0 });
+
   return (
     <section class="projects" id="projects">
-      <h1 className="projects-title">SELECTED WORKS</h1>
+      <main className="wrapper">
+        <h1>Selected Works</h1>
+        <motion.div
+          className="body"
+          variants={variants}
+          initial="initial"
+          whileInView="animate"
+        >
+          {projects.map((project, index) => {
+            return (
+              <motion.div variants={variants}>
+                <Project
+                  index={index}
+                  title={project.title}
+                  setModal={setModal}
+                  key={index}
+                  subtitle={project.subtitle}
+                  tech={project.tech}
+                />
+              </motion.div>
+            );
+          })}
+        </motion.div>
+
+        <Modal modal={modal} projects={projects} />
+      </main>
+
+      {/* <h1 className="projects-title">SELECTED WORKS</h1>
       <div class="project">
         <div className="project-header">
           <div class="left">
@@ -54,7 +141,7 @@ export default function Projects() {
           Note-taking desktop application with built-in quiz app and progress
           tracker.
         </p>
-      </div>
+      </div> */}
     </section>
   );
 }

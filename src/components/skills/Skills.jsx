@@ -58,14 +58,18 @@ export default function Skills() {
             animate={isInView && "animate"}
           >
             {languages.map((item) => (
-              <motion.img
-                src={item}
-                height={100}
-                variants={variants(0)}
-                drag
-                draggable="false"
-                dragConstraints={reficons}
-              />
+              <>
+                <motion.img
+                  src={item}
+                  height={100}
+                  variants={variants(0)}
+                  drag
+                  draggable="false"
+                  dragConstraints={reficons}
+                  whileTap={{ scale: 0.8 }}
+                  whileHover={{ scale: 1.2 }}
+                />
+              </>
             ))}
           </motion.div>
           <motion.div
@@ -82,6 +86,8 @@ export default function Skills() {
                 drag
                 draggable="false"
                 dragConstraints={reficons}
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.8 }}
               />
             ))}
           </motion.div>
@@ -98,6 +104,8 @@ export default function Skills() {
                 variants={variants(2)}
                 drag
                 draggable="false"
+                whileTap={{ scale: 0.8 }}
+                whileHover={{ scale: 1.2 }}
                 dragConstraints={reficons}
               />
             ))}
