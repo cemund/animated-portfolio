@@ -167,7 +167,7 @@ const Contact = () => {
         <span className="name">
           © 2024 <bold>CEMUND MALAGAR</bold>{" "}
         </span>
-        <span className="name">Site designed and coded with 🫶</span>
+        <span className="designed">Site designed and coded with 🫶</span>
         <a href="#Homepage">
           <motion.span className="backToTop" whileHover={{ scale: 1.1 }}>
             <svg

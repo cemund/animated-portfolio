@@ -56,9 +56,7 @@
 
           .tech {
             display: flex;
-            @include mobile {
-              gap: 1rem;
-            }
+            gap: 1rem;
           }
         }
       }
@@ -76,7 +74,7 @@
       }
 
       .project:hover p {
-        transform: translateX(10px);
+        transform: translateX(50px);
       }
       .project:hover .tech {
         transform: translateX(10px);
