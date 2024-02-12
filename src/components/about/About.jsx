@@ -1,7 +1,6 @@
 import { useRef } from "react";
-// import "./About.css";
 import "./about.scss";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 
 const variants = {
   initial: {
@@ -21,13 +20,16 @@ const variants = {
 };
 
 export default function About() {
+  const ref = useRef();
+
+  const isInView = useInView(ref);
   return (
-    <section class="about" id="about" name="learn-more">
+    <section class="about" id="about" name="learn-more" ref={ref}>
       <motion.div
         class="about-header"
         variants={variants}
         initial="initial"
-        whileInView="animate"
+        animate={isInView && "animate"}
       >
         <motion.h1 variants={variants}>ABOUT</motion.h1>
         <motion.h1 whileHover={{ color: "#41add8" }} variants={variants}>
@@ -83,7 +85,7 @@ export default function About() {
         class="about-content"
         variants={variants}
         initial="initial"
-        whileInView="animate"
+        animate={isInView && "animate"}
       >
         <motion.p variants={variants}>
           I am Cemund Malagar, a Computer Science graduate from Bulacan,

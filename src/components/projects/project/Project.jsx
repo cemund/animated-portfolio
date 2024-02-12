@@ -19,7 +19,7 @@ export default function Project({ index, title, setModal, subtitle, tech }) {
         </div>
       </div>
       <div className="projectBody">
-        <p>{subtitle}t</p>
+        <p>{subtitle}</p>
       </div>
     </div>
   );

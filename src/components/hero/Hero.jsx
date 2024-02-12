@@ -54,23 +54,31 @@ export default function Hero() {
             Web and Mobile developer
           </motion.h2>
           <motion.div className="buttons" variants={textVariants}>
-            <motion.button
-              whileHover={{
-                scale: 1.1,
-                boxShadow: "0px 0px 8px white",
-                textShadow: "0px 0px 8px white",
-              }}
-              whileTap={{ scale: 0.9 }}
-              className="button1"
+            <form
+              action="#Portfolio"
+              method="get"
+              style={{ display: "inline" }}
             >
-              See my Works
-            </motion.button>
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              Contact Me
-            </motion.button>
+              <motion.button
+                whileHover={{
+                  scale: 1.1,
+                  boxShadow: "0px 0px 8px white",
+                  textShadow: "0px 0px 8px white",
+                }}
+                whileTap={{ scale: 0.9 }}
+                className="button1"
+              >
+                See my Works
+              </motion.button>
+            </form>
+            <form action="#Contact" method="get" style={{ display: "inline" }}>
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                Contact Me
+              </motion.button>
+            </form>
           </motion.div>
           <motion.img
             variants={textVariants}
