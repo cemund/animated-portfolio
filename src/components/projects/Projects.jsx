@@ -10,14 +10,14 @@ const projects = [
     title: "Furniverse",
     subtitle:
       "Furniture ecommerce mobile application where users can view products realistically in their own environment using augmented reality.",
-    src: "./image.png",
+    src: "./furniverse.png",
     color: "#000000",
     tech: ["Flutter", "Firebase"],
   },
 
   {
     title: "TOS Watchdog",
-    src: "./image.png",
+    src: "./tosWatchdog.png",
     subtitle:
       "Chrome extension designed to empower users by automatically highlighting unfair clauses within online Terms of Service (TOS) agreements in websites.",
     tech: ["Javascript", "Python", "Flask"],
@@ -26,7 +26,7 @@ const projects = [
 
   {
     title: "Notention",
-    src: "./image.png",
+    src: "./notention.png",
     subtitle:
       "Note-taking desktop application with built-in quiz app and progress tracker.",
     tech: ["Java", "SQLite"],
@@ -35,7 +35,7 @@ const projects = [
 
   {
     title: "Shotz",
-    src: "./image.png",
+    src: "./shotz.jpg",
     subtitle:
       "Lets users upload photos for personal and commercial use, building a free library of high-quality visual content.",
     tech: ["Javascript", "PHP", "MySQL"],
